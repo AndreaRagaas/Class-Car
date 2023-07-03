@@ -22,3 +22,13 @@ class Car:
     
 # Creating a new class Car_Speed to show the current speed of the car.
 class Car_Speed:
+    # Defining the Car objects
+    def __init__(self, root):
+        self.root = root
+        self.car = Car(2022, 'Toyota')
+        self.speed_label = tk.Label(root, text="Current speed: 0")
+        self.speed_label.pack()
+        self.accelerate_button = tk.Button(root, text="Accelerate", command=self.accelerate)
+        self.accelerate_button.pack()
+        self.brake_button = tk.Button(root, text="Brake", command=self.brake)
+        self.brake_button.pack()

@@ -32,3 +32,16 @@ class Car_Speed:
         self.accelerate_button.pack()
         self.brake_button = tk.Button(root, text="Brake", command=self.brake)
         self.brake_button.pack()
+
+    # Defining the functions of each button of the Gui on showing the Car's current speed
+    def update_speed_label(self):
+        current_speed = self.car.get_speed()
+        self.speed_label.config(text="Current speed: " + str(current_speed))
+    
+    def accelerate(self):
+        self.car.accelerate()
+        self.update_speed_label()
+    
+    def brake(self):
+        self.car.brake()
+        self.update_speed_label()

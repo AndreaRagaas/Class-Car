@@ -1,3 +1,6 @@
+# Importing Tkinter to add a Gui for the current speed of the Car
+import tkinter as tk
+
 # Creating the class Car
 class Car:
     # Defining all of the objects for the Car

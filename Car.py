@@ -19,3 +19,6 @@ class Car:
     
     def get_speed(self):
         return self._speed
+    
+# Creating a new class Car_Speed to show the current speed of the car.
+class Car_Speed:

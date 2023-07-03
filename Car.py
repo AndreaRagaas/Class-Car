@@ -45,3 +45,9 @@ class Car_Speed:
     def brake(self):
         self.car.brake()
         self.update_speed_label()
+
+# Creating an instance to run the program
+if __name__ == "__main__":
+    root = tk.Tk()
+    car_gui = Car_Speed(root)
+    root.mainloop()
